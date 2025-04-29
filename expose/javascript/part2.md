@@ -91,3 +91,6 @@ let student = {
 
 **15. Explain the difference between the == and === operators**
 The == operator will first do the JavaScript type conversion and then check equality, whereas === checks for equality (value and type) but does not type convert.
+
+**17. If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result?**
+The `modifyArray` function takes in `array` and `callback` parameters. With the call, modifyArray([1,2,3], doSomething), it will go through the array [1,2,3], and for each element, it will call the `doSomething` function on it. The `doSomething` function will double each value that is passed to it, so when it is done returning that, `modifyArray` will push this new value into `newArray`, which will be returned at the end with [2,4,6] stored.
